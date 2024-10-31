@@ -5,10 +5,8 @@
 import sys
     #2行あけましょう
 def tonum(s):
-    try:
         return int(s)
-    except:
-        return float(s)
+
     #2行あけましょう
 ans = 0
 for line in sys.stdin:
