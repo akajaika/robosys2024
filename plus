@@ -5,7 +5,14 @@
 import sys
     #2行あけましょう
 def tonum(s):
+    try:
         return int(s)
+    except:
+        try:
+            return float(s)
+        except:
+            return 0
+        
 
     #2行あけましょう
 ans = 0
