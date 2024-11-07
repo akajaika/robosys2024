@@ -10,8 +10,6 @@ def tonum(s):
     except:
         try:
             return float(s)
-        #except:
-        #    return 0
         
 
     #2行あけましょう
