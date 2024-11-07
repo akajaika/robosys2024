@@ -8,8 +8,7 @@ def tonum(s):
     try:
         return int(s)
     except:
-        try:
-            return float(s)
+        return float(s)
         
 
     #2行あけましょう
