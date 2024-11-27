@@ -5,9 +5,8 @@
 import sys
 import requests
 
-
-area = "130000" 
-detail_area = "東京地方" 
+area = "130000"
+detail_area = "東京地方"
 
 forecast_url = f"https://www.jma.go.jp/bosai/forecast/data/forecast/{area}.json"
 forecast_req = requests.get(forecast_url)
@@ -20,18 +19,29 @@ forecast_data = forecast_req.json()
 forecast_data = forecast_data[0]["timeSeries"][0]["areas"]
 
 def find_index(data, target_area):
-        for index, area_info in enumerate(data):
-            if area_info["area"]["name"] == target_area:
-                return index
-        return -1  
+    for index, area_info in enumerate(data):
+        if area_info["area"]["name"] == target_area:
+            return index
+    return -1
 
 forecast_data_target_index = find_index(forecast_data, detail_area)
 
-if forecast_data_target_index != -1:
-    weather = forecast_data[forecast_data_target_index]["weathers"]
-    tomorrow_weather = " ".join(weather[1].split()) 
+for line in sys.stdin:
+    days = line.strip()
 
-    print(f"明日の天気（{detail_area}）: {tomorrow_weather}")
+if forecast_data_target_index != -1:
+    if days == "today":
+        weather = forecast_data[forecast_data_target_index]["weathers"]
+        today_weather = " ".join(weather[0].split())  
+
+        print(f"今日の天気（{detail_area}）: {today_weather}")
+
+    if days == "tomorrow":
+        weather = forecast_data[forecast_data_target_index]["weathers"]
+        today_weather = " ".join(weather[1].split())  
+
+        print(f"明日の天気（{detail_area}）: {today_weather}")
+
 else:
     print("データが見つかりませんでした。")
 
