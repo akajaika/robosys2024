@@ -5,7 +5,11 @@
 
 [![test](https://github.com/kentotutui/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/kentotutui/robosys2023/actions/workflows/test.yml)
 
-このリポジトリ内の[weather]()は、BSD-3-Clauseライセンスで公開されている[Yuto2511](https://github.com/hide4096/robosys2022_Yuto2511.git)の[todays_dinner](https://github.com/hide4096/robosys2022_Yuto2511/blob/main/todays_dinner)(© 2022 Yamaguchi Yuto)を参考に作られています。
+このリポジトリ内の[weather]()は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota
+(Ryota)
+in
+
+株式会社マイナビ)を参考に作られています。
 
 ## 必要なソフトウェア
   * Python
