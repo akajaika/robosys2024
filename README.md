@@ -38,6 +38,8 @@ $ seq -3 | ./plus
 0
 ```
 
+また、数字以外の入力には対応しておらず、エラーが発生した場合は再度数字を入力し実行してください。
+
 ## weather 使い方
 標準入力を使い日にちを読み込み、今日、もしくは翌日の東京地方の天候を出力します。気候情報は[気象庁ホームページについて](https://www.jma.go.jp/jma/kishou/info/coment.html)に則り[気象庁ホームページ（東京都の天気予報）](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000)より一部抜粋し使用しています。
 ```shell
