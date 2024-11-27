@@ -5,15 +5,14 @@
 
 [![test](https://github.com/akajaika/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/akajaika/robosys2024/actions/workflows/test.yml)
 
-このリポジトリ内の[weather]()は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota
-(Ryota)in株式会社マイナビ)を参考に作られています。
+このリポジトリ内の[weather](https://github.com/akajaika/robosys2024/blob/main/weather)は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota(Ryota) in 株式会社マイナビ)を参考に作られています。同様にこの[README](https://github.com/akajaika/robosys2024/blob/main/README.md)は、[kentotutui](https://github.com/kentotutui)の[robosys2023](https://github.com/kentotutui/robosys2023/blob/main/README.md)(© 2023 Kento Tsutsui)を参考に作られています。
 
 ## 必要なソフトウェア
   * Python
     * テスト済み: 3.7~3.10
 
 ## テスト環境
-  * Ubuntu 24.04.1 LTS
+  * Ubuntu 24.04 LTS
 
 ## インストール方法
 使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。事前にSSHキーの設定、Gitのインストールを行ってください。
