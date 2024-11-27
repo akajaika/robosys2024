@@ -15,12 +15,20 @@
   * Ubuntu 24.04 LTS
 
 ## インストール方法
-使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。事前にGitのインストールを行ってください。
+使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。
 
 
 ```shell
 $ git clone https://github.com/akajaika/robosys2024.git
 $ cd robosys2024
+```
+
+事前にGitがインストールされていない場合は、以下のコマンドでインストールとバージョン確認を行ってください。
+
+```shell
+$ sudo apt update
+$ sudo apt install git
+$ git --version
 ```
 
 ## plus 使い方
