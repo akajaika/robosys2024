@@ -3,13 +3,10 @@
 
 千葉工業大学 未来ロボティクス学科 2024年度 ロボットシステム学内で行った内容に、課題で作成したファイルを追加したものです。
 
-[![test](https://github.com/kentotutui/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/kentotutui/robosys2023/actions/workflows/test.yml)
+[![test](https://github.com/akajaika/robosys2024.git/.github/workflows/test.yml)](https://github.com/akajaika/robosys2024.git/.github/workflows/test.yml)
 
 このリポジトリ内の[weather]()は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota
-(Ryota)
-in
-
-株式会社マイナビ)を参考に作られています。
+(Ryota)in株式会社マイナビ)を参考に作られています。
 
 ## 必要なソフトウェア
   * Python
