@@ -20,5 +20,9 @@ out=$(echo | ./plus)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+### weather TEST ###
+out=$(./weather)
+[ "$?" = 0 ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 exit "$res"
