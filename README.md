@@ -50,6 +50,9 @@ $ seq -3 | ./plus
 
 ## weather 使い方
 標準入力を使い日にちを読み込み、今日、もしくは翌日の東京地方の天候を出力します。気候情報は[気象庁ホームページについて](https://www.jma.go.jp/jma/kishou/info/coment.html)に則り[気象庁ホームページ（東京都の天気予報）](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000)より一部抜粋し使用しています。
+注意:
+入力可能な値は "today" または "tomorrow" のみです。それ以外の入力を行うとエラーが発生する可能性があります。
+
 ```shell
 $ echo "today" | ./weather
 今日の天気（東京地方）: 晴れ 時々 くもり
