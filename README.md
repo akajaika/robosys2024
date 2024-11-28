@@ -10,6 +10,7 @@
 
 [README](https://github.com/akajaika/robosys2024/blob/main/README.md)は、[kentotutui](https://github.com/kentotutui)の[robosys2023](https://github.com/kentotutui/robosys2023/blob/main/README.md)(© 2023 Kento Tsutsui)を参考に作られています。
 
+
 ## 必要なソフトウェア
   * Python
     * テスト済み: 3.7~3.10
@@ -22,22 +23,23 @@
   * GitHub Actions  
     * Ubuntu 22.04 LTS 
 
-## 使用準備
-使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。
 
+## 使用準備
+下記コマンドを使用し、適当な場所でクローンを行ってください。
 
 ```shell
 $ git clone https://github.com/akajaika/robosys2024.git
 $ cd robosys2024
 ```
 
-事前にGitがインストールされていない場合は、以下のコマンドでインストールとバージョンの確認を行ってください。
+事前にGitがインストールされていない場合、以下のコマンドからインストールとバージョンの確認を行ってください。
 
 ```shell
 $ sudo apt update
 $ sudo apt install git
 $ git --version
 ```
+
 
 ## plus 使い方
 標準入力を使い数字を読み込み、1～入力された数までの合計を出力します。
@@ -55,6 +57,7 @@ $ seq -3 | ./plus
 ```
 
 また、数字以外の入力には対応しておらず、エラーが発生した場合は再度数字を入力し実行してください。
+
 
 ## weather 使い方
 標準入力を使い日にちを読み込み、今日、もしくは翌日の東京地方の天候を出力します。気候情報は[気象庁ホームページについて](https://www.jma.go.jp/jma/kishou/info/coment.html)に則り[気象庁ホームページ（東京都の天気予報）](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000)よりWEB APIを用いて取得。
