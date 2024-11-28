@@ -27,9 +27,6 @@ out=$(echo "today" | ./weather)
 out=$(echo "tomorrow" | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
 
-out=$(echo " " | ./weather)
-[ "$?" = 0 ] || ng ${LINENO}
-
 out=$(echo "明日" | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
 
@@ -62,6 +59,9 @@ out=$(echo ""Today\n"" | ./weather)
 
 out=$(echo ""aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"" | ./weather)
 [ "$?" = 1 ] || ng "$LINENO"
+
+out=$(echo " " | ./weather)
+[ "$?" = 0 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit "$res"
