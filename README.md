@@ -14,8 +14,13 @@
   * Python
     * テスト済み: 3.7~3.10
 
+## 作成環境
+    * WSL2 
+    * Ubuntu 24.04 LTS
+    
 ## テスト環境
-  * Ubuntu 24.04 LTS
+  * GitHub Actions  
+    * Ubuntu 22.04 LTS (ubuntu latest)
 
 ## 使用準備
 使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。
