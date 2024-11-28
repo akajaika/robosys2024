@@ -44,7 +44,8 @@ if forecast_data_target_index != -1:
 
     else:
         print("データが見つかりませんでした。")
+        exit()
 
 else:
     print("データが見つかりませんでした。")
-
+    exit()
