@@ -31,7 +31,7 @@ $ git clone https://github.com/akajaika/robosys2024.git
 $ cd robosys2024
 ```
 
-事前にGitがインストールされていない場合は、以下のコマンドでインストールとバージョン確認を行ってください。
+事前にGitがインストールされていない場合は、以下のコマンドでインストールとバージョンの確認を行ってください。
 
 ```shell
 $ sudo apt update
