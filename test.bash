@@ -28,7 +28,7 @@ out=$(echo "tomorrow" | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
 
 out=$(echo today | ./weather)
-[ "$?" = 1 ] || ng "$LINENO"
+[ "$?" = 0 ] || ng "$LINENO"
 
 out=$(echo "明日" | ./weather)
 [ "$?" = 1 ] || ng ${LINENO}
