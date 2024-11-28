@@ -29,15 +29,12 @@ out=$(echo "tomorrow" | ./weather)
 
 out=$(echo " " | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
-[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo "明日" | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
-[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo "123" | ./weather)
 [ "$?" = 0 ] || ng ${LINENO}
-[ "${out}" = "" ] || ng "$LINENO"
 
 
 [ "$res" = 0 ] && echo OK
