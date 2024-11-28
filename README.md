@@ -11,17 +11,10 @@
 [README](https://github.com/akajaika/robosys2024/blob/main/README.md)は、[kentotutui](https://github.com/kentotutui)の[robosys2023](https://github.com/kentotutui/robosys2023/blob/main/README.md)(© 2023 Kento Tsutsui)を参考に作られています。
 
 
-## 必要なソフトウェア
-  * Python
-    * テスト済み: 3.7~3.10
-
-## 作成環境
-* WSL2 
-* Ubuntu 24.04 LTS
-    
-## テスト環境
+## テスト済みの環境
   * GitHub Actions  
-    * Ubuntu 22.04 LTS 
+    * Ubuntu 22.04 LTS
+        * Python: 3.7~3.10 
 
 
 ## 使用準備
