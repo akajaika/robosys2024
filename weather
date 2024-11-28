@@ -36,14 +36,14 @@ if forecast_data_target_index != -1:
 
         print(f"今日の天気（{detail_area}）: {today_weather}")
 
-    if days == "tomorrow":
+    elif days == "tomorrow":
         weather = forecast_data[forecast_data_target_index]["weathers"]
         today_weather = " ".join(weather[1].split())  
 
         print(f"明日の天気（{detail_area}）: {today_weather}")
 
-        else:
-            print("データが見つかりませんでした。")
+    else:
+        print("データが見つかりませんでした。")
 
 else:
     print("データが見つかりませんでした。")
