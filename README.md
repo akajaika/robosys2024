@@ -20,7 +20,7 @@
     
 ## テスト環境
   * GitHub Actions  
-    * Ubuntu 22.04 LTS (ubuntu latest)
+    * Ubuntu 22.04 LTS (ubuntu-latest)
 
 ## 使用準備
 使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。
