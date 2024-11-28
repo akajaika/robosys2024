@@ -13,7 +13,7 @@ forecast_req = requests.get(forecast_url)
 
 if forecast_req.status_code != 200:
     print("page not found")
-    exit(1)
+    exit()
 
 forecast_data = forecast_req.json()
 forecast_data = forecast_data[0]["timeSeries"][0]["areas"]
@@ -44,8 +44,8 @@ if forecast_data_target_index != -1:
 
     else:
         print("データが見つかりませんでした。")
-        exit(1)
+        exit()
 
 else:
     print("データが見つかりませんでした。")
-    exit(1)
+    exit()
