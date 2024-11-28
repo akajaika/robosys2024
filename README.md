@@ -15,8 +15,8 @@
     * テスト済み: 3.7~3.10
 
 ## 作成環境
-    * WSL2 
-    * Ubuntu 24.04 LTS
+* WSL2 
+* Ubuntu 24.04 LTS
     
 ## テスト環境
   * GitHub Actions  
