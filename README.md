@@ -5,7 +5,10 @@
 
 [![test](https://github.com/akajaika/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/akajaika/robosys2024/actions/workflows/test.yml)
 
-このリポジトリ内の[weather](https://github.com/akajaika/robosys2024/blob/main/weather)は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota(Ryota) in 株式会社マイナビ)を参考に作られています。同様にこの[README](https://github.com/akajaika/robosys2024/blob/main/README.md)は、[kentotutui](https://github.com/kentotutui)の[robosys2023](https://github.com/kentotutui/robosys2023/blob/main/README.md)(© 2023 Kento Tsutsui)を参考に作られています。
+このリポジトリ内の[weather](https://github.com/akajaika/robosys2024/blob/main/weather)は、[T_Ryota(Ryota)](https://qiita.com/T_Ryota)の[【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)(@T_Ryota(Ryota) in 株式会社マイナビ)を参考に作られています。
+
+
+[README](https://github.com/akajaika/robosys2024/blob/main/README.md)は、[kentotutui](https://github.com/kentotutui)の[robosys2023](https://github.com/kentotutui/robosys2023/blob/main/README.md)(© 2023 Kento Tsutsui)を参考に作られています。
 
 ## 必要なソフトウェア
   * Python
@@ -14,7 +17,7 @@
 ## テスト環境
   * Ubuntu 24.04 LTS
 
-## インストール方法
+## 使用準備
 使用する場合は、下記コマンドを打ち込み適当な場所にクローンしてください。
 
 
@@ -49,7 +52,7 @@ $ seq -3 | ./plus
 また、数字以外の入力には対応しておらず、エラーが発生した場合は再度数字を入力し実行してください。
 
 ## weather 使い方
-標準入力を使い日にちを読み込み、今日、もしくは翌日の東京地方の天候を出力します。気候情報は[気象庁ホームページについて](https://www.jma.go.jp/jma/kishou/info/coment.html)に則り[気象庁ホームページ（東京都の天気予報）](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000)より一部抜粋し使用しています。
+標準入力を使い日にちを読み込み、今日、もしくは翌日の東京地方の天候を出力します。気候情報は[気象庁ホームページについて](https://www.jma.go.jp/jma/kishou/info/coment.html)に則り[気象庁ホームページ（東京都の天気予報）](https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=130000)よりWEB APIを用いて取得。
 
 注意:
 入力可能な値は "today" または "tomorrow" のみです。それ以外の入力を行うとエラーが発生する可能性があります。
